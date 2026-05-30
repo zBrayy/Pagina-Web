@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes</title>
+    <link rel="stylesheet" href="../CSS/personajes.css">
+    <script src="../js/reloj.js"></script>
+    <script src="../js/buscador_personajes.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Personajes Icónicos</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="personajes.html">Personajes</a></li>
+            <li><a href="consolas.html">Consolas</a></li>
+        </ul>
+    </nav>
+    <p id="reloj" style="margin-top: 10px; font-weight: bold; color: #ffffff;"></p>
+</header>
+
+<main class="flex-personajes">
+
+    <section id="caja-buscador" class="seccion-buscador">
+        <h2 class="titulo-buscador">Buscador de Base de Datos</h2>
+        <p class="descripcion-buscador">Busca si un personaje de Mario o Sonic está registrado en el sistema.</p>
+        
+        <input type="text" id="personaje" class="caja-entrada" placeholder="Ej: Mario, Sonic, Luigi...">
+        
+        <button id="btn-buscar" class="boton-enviar" onclick="buscarPersonaje()">Buscar</button>
+    </section>
+
+    <article class="personaje">
+        <h3>Mario</h3>
+        <img src="../IMG/Mario.png" alt="Mario">
+        <p>El personaje más famoso de Nintendo.</p>
+    </article>
+
+    <article class="personaje">
+        <h3>Sonic</h3>
+        <img src="../IMG/SONIC.jpg" alt="Sonic">
+        <p>El erizo azul de SEGA.</p>
+    </article>
+
+</main>
+
+<footer>
+    <p> 2026 Historia de los Videojuegos</p>
+</footer>
+
+</body>
+</html>
